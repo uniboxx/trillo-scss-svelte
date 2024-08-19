@@ -1,9 +1,9 @@
 <script>
   import { base, icons } from '../js/constants';
-  import Cta from './Cta.svelte';
-  import Details from './Details.svelte';
-  import Gallery from './Gallery.svelte';
-  import Overview from './Overview.svelte';
+  import Cta from '../layouts/Cta.svelte';
+  import Details from '../layouts/Details.svelte';
+  import Gallery from '../layouts/Gallery.svelte';
+  import Overview from '../layouts/Overview.svelte';
 </script>
 
 <main class="hotel-view">

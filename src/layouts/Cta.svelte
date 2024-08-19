@@ -1,5 +1,4 @@
 <script>
-  import { base, icons } from '../js/constants';
 </script>
 
 <div class="cta">

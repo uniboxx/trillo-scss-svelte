@@ -1,7 +1,7 @@
 <script>
   import { base } from '../js/constants';
-  import Nav from './Header-Nav.svelte';
-  import SearchForm from './SearchForm.svelte';
+  import Nav from '../lib/Header-Nav.svelte';
+  import SearchForm from '../lib/SearchForm.svelte';
 </script>
 
 <header class="header">

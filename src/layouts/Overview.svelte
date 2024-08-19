@@ -1,31 +1,22 @@
 <script>
   import { base, icons } from '../js/constants';
+  import ButtonInline from '../lib/Button-inline.svelte';
 </script>
 
 <div class="overview">
   <h1 class="overview__heading">Hotel Las Palmas</h1>
   <div class="overview__stars">
-    <svg class="overview__icon-star">
-      <use xlink:href={`${icons}#icon-star`}></use>
-    </svg>
-    <svg class="overview__icon-star">
-      <use xlink:href={`${icons}#icon-star`}></use>
-    </svg>
-    <svg class="overview__icon-star">
-      <use xlink:href={`${icons}#icon-star`}></use>
-    </svg>
-    <svg class="overview__icon-star">
-      <use xlink:href={`${icons}#icon-star`}></use>
-    </svg>
-    <svg class="overview__icon-star">
-      <use xlink:href={`${icons}#icon-star`}></use>
-    </svg>
+    {#each new Array(5) as item, idx (idx)}
+      <svg class="overview__icon-star">
+        <use xlink:href={`${icons}#icon-star`}></use>
+      </svg>
+    {/each}
   </div>
   <div class="overview__location">
     <svg class="overview__icon-location">
       <use xlink:href={`${icons}#icon-location-pin`}></use>
     </svg>
-    <button class="btn-inline">Albuferia, Portugal</button>
+    <ButtonInline>Albuferia, Portugal</ButtonInline>
   </div>
 
   <div class="overview__rating">

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Header from './lib/Header.svelte';
+  import Header from './layouts/Header.svelte';
   import Main from './lib/Main.svelte';
-  import Sidebar from './lib/Sidebar.svelte';
+  import Sidebar from './layouts/Sidebar.svelte';
 </script>
 
 <div class="container">
